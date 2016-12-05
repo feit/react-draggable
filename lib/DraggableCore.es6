@@ -254,7 +254,7 @@ export default class DraggableCore extends React.Component {
   handleDrag: EventHandler<MouseTouchEvent> = (e) => {
 
     // Prevent scrolling on mobile devices, like ipad/iphone.
-    if (e.type === 'touchmove') e.preventDefault();
+    // if (e.type === 'touchmove') e.preventDefault();
 
     // Get the current drag point from the event. This is used as the offset.
     const position = getControlPosition(e, this.state.touchIdentifier, this);
